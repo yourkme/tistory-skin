@@ -4,6 +4,7 @@
 }
 body {
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-items:center;
 }
@@ -42,10 +43,31 @@ body {
     }
     .blog_title {
         font-size:2em;
-        
     }
 
 /* CONTENTS */
     .contents {
         width:90%;
+        margin-top:1em;
+    }
+    .title {
+        font-family:'Noto Sans KR', sans-serif;
+        font-size:1.5em;
+        font-weight:700;
+    }
+    
+    .infogroup {
+        display:flex;
+        justify-content:space-between;
+    }
+    
+    .info {
+        font-family:'Noto Sans KR', sans-serif;
+        font-size:.8em;
+        font-weight:500;
+    }
+    .info > a {
+        display:block;
+        text-decoration:none;
+        color:black;
     }
