@@ -14,6 +14,8 @@ body {
         padding:.5em;
         user-select:none;
         border-bottom:1px solid black;
+        font-family:'Noto Sans KR', sans-serif;
+        font-weight:900;
     }
 
     .head > * {
@@ -40,4 +42,10 @@ body {
     }
     .blog_title {
         font-size:2em;
+        
+    }
+
+/* CONTENTS */
+    .contents {
+        width:90%;
     }
