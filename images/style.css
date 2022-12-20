@@ -2,12 +2,19 @@
     margin:0;
     padding:0;
 }
+
 body {
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
 }
+
+:root {
+    --usercolor:#eee;
+    --useraccent:#ddd;
+}
+
 /* HEADER */
     .head {
         width:90%;
@@ -59,6 +66,7 @@ body {
     .infogroup {
         display:flex;
         justify-content:space-between;
+        align-items:center;
     }
     
     .info {
@@ -66,8 +74,19 @@ body {
         font-size:.8em;
         font-weight:500;
     }
+
     .info > a {
         display:block;
+        padding:.2em;
+        border-radius:.2em;
+
         text-decoration:none;
         color:black;
+
+        background-color:var(--usercolor);
+        transition:.2s all;
+    }
+
+    .info > a:hover {
+        background-color:var(--useraccent);
     }
