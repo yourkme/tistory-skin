@@ -1,0 +1,92 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+:root {
+    --usercolor:#eee;
+    --useraccent:#ddd;
+}
+
+/* HEADER */
+    .head {
+        width:90%;
+        display:flex;
+        padding:.5em;
+        user-select:none;
+        border-bottom:1px solid black;
+        font-family:'Noto Sans KR', sans-serif;
+        font-weight:900;
+    }
+
+    .head > * {
+        display:flex;
+        margin-left:.5em;
+        cursor:pointer;
+    }
+
+/* HEADER - BLOG TITLE GROUP */
+    .blog_title_group {
+        height:3em;
+        display:flex;
+        justify-content:center;
+        color:black;
+        text-decoration:none;
+    }
+    .blog_title_group > *{
+        margin-left:.5em;
+    }
+    .blog_image > img {
+        width:3em;
+        height:3em;
+        border-radius:50%;
+    }
+    .blog_title {
+        font-size:2em;
+    }
+
+/* CONTENTS */
+    .contents {
+        width:90%;
+        margin-top:1em;
+    }
+    .title {
+        font-family:'Noto Sans KR', sans-serif;
+        font-size:1.5em;
+        font-weight:700;
+    }
+    
+    .infogroup {
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    
+    .info {
+        font-family:'Noto Sans KR', sans-serif;
+        font-size:.8em;
+        font-weight:500;
+    }
+
+    .info > a {
+        display:block;
+        padding:.2em;
+        border-radius:.2em;
+
+        text-decoration:none;
+        color:black;
+
+        background-color:var(--usercolor);
+        transition:.2s all;
+    }
+
+    .info > a:hover {
+        background-color:var(--useraccent);
+    }
