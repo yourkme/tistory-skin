@@ -7,11 +7,13 @@
             <![CDATA[심플한 느낌으로 가볍게 제작한 스킨입니다.]]>
         </description>
     </information>
+
     <author>
         <name>yourkme</name>
         <homepage>http://yourk.me</homepage>
         <email>kafu@yourk.me</email>
     </author>
+
     <default>
         <recentEntries>5</recentEntries>
         <recentComments>5</recentComments>
@@ -50,4 +52,45 @@
         
         <contentWidth>500</contentWidth>
     </default>
+
+    <variables>
+        <variablegroup name="기본 색상/배경 설정">
+            <!-- 다크 모드 활성화 -->
+            <variable>
+                <name>darkMode</name>
+                <label>다크 모드</label>
+                <description>다크 모드의 적용 여부</description>
+                <type>BOOL</type>
+                <default>false</default>
+            </variable>
+
+            <!-- 기본 색상 -->
+            <variable>
+                <name>userColor</name>
+                <label>기본 색상 효과</label>
+                <description>기본 효과의 색상 변경</description>
+                <type>color</type>
+                <default><![CDATA[#eee]]></default>
+            </variable>
+
+            <!-- 강조 색상 -->
+            <variable>
+                <name>accentColor</name>
+                <label>강조 색상 효과</label>
+                <description>강조 효과의 색상 변경</description>
+                <type>color</type>
+                <default><![CDATA[#ddd]]></default>
+            </variable>
+            
+            <!--배경 이미지-->
+            <variable>
+                <name>backgroundImage</name>
+                <label>배경 이미지</label>
+                <description>배경 이미지</description>
+                <type>IMAGE</type>
+                <default></default>
+            </variable>
+            
+        </variablegroup>
+    </variables>
 </skin>
